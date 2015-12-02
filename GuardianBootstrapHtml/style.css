@@ -188,12 +188,44 @@ top:3px;
 	
 	top:5px;
 	color:#bdbdbd;
+	margin-left: 2rem;
 }
 
 .comment {
 	position:absolute;
 	bottom:2.5rem;
 }
+.plum {
+	background-color: #951c55;
+	color:#fff;
+}
+
+.plum .comment {
+	color:#fdadba;
+}
+.plum .glyphicon-comment {
+	color:#fdadba
+}
+
+.allStoriesBtn {
+	color:#005689;
+	border-color:#4bc6df;
+	border-radius: 62.5rem;
+	position: absolute;
+	bottom: 20px;
+
+}
+.wellText {
+	padding:5px 19px 10px;
+}
+
+.allStoriesBtn:hover, .allStoriesBtn:focus,.allStoriesBtn:active {
+	color:#333;
+	background-color: #fff;
+	border-color:#a4a4a4;
+
+}
+
 .rowMargin {
 	margin-left: 15px;
 	margin-right: 40px;
@@ -214,6 +246,7 @@ top:3px;
 	border-radius:0;
 	border:none;
 	border-top:1px solid #4bc6df;
+	padding:0 0 20px 0;
 
 }
 
