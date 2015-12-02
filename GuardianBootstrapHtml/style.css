@@ -1,0 +1,299 @@
+/*
+Author: Sarah O Connor
+Assignment: W12.0 FEWD, Digital SKills Academy
+Student ID:D131126148
+Date:2015/07/17
+
+custom css is also in the bootstrap.css file created from bootstrap customiser, i.e. number of columns,
+didn't get all the container settings just right so fixed them here, (hadn't time to redo it).
+*/
+
+/*css applied to all media*/
+@media all {
+
+body {
+	background: rgba(51,51,51,0.05);
+}
+
+
+.guardianBackground {
+	background-color: #005689;
+	}
+
+.mainMenuBackground {
+		background-color:#00456e;
+	}
+}
+.breadcrumbBackground {
+	background-color:#efefef;
+}
+.footerMenuBackground {
+	background-color: #196795;
+}
+
+.mainContainer {
+	padding-top: 15px;
+	background:#fff;
+}
+
+.menuMain {
+	padding-left: 0;
+	padding-right: 0;
+}
+.breadcrumbContainer {
+	padding-left:0;
+	padding-right:0;
+}
+
+.noPaddingLeft {
+	padding-left: 0;
+}
+
+.noPaddingRight {
+	padding-right: 0;
+}
+
+/*scroll instead of collapse main nav, hide scroll bars */
+.navbarScroll {
+
+  overflow: scroll;
+  white-space: nowrap;
+  max-height: 50px;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+
+
+
+.header {
+	color:#fff;
+	background:#005689;
+	/*width:1140px;*/
+}
+
+.navbar-brand {
+	font-size: 14px;
+	line-height: 2.25rem;
+	font-weight: 500;
+}
+
+.navbar {
+	margin-bottom: 0;
+	border:none;
+}
+.navbar li  {
+	font-weight: 500;
+	line-height: 2.25rem;
+}
+
+.navbar-default .navbar-nav li a:hover, nav li a:focus {
+
+	color:#fff;
+}
+.backToTop{
+	min-height:50px;
+	color:#fff;
+	background-color: #005689;
+	padding:15px
+}
+
+.footerFooter {
+	background-color:#484848;
+	color:#dcdcdc;
+	min-height: 200px;
+}
+h1 {
+	font-weight: 900;
+}
+
+h3 {
+	font-weight:900;
+	color:#00456e;
+	line-height: 1.5rem;
+
+}
+/*
+h3 {
+	font-weight: 700;
+	color:#4bc6df;
+}*/
+
+.allSections {
+
+	background:#333;
+}
+
+.allSections li {
+	text-decoration: underline;
+}
+
+.flex {
+	display:flex;
+}
+
+.sameHeight {
+	flex:1 1 auto;
+}
+.breadcrumb {
+	margin-bottom: 0;
+}
+
+.breadcrumb li a {
+
+	color:#005689;
+	
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+  float:left;
+  padding:2px 10px;
+}
+
+.iconNavbar {
+	background: transparent;
+}
+
+.iconNavbar li {
+	float:left;
+}
+
+/*circle for icons */
+
+.glyphicon-user, .glyphicon-search, .glyphicon-option-horizontal {
+	color:#fff;
+	font-size:14px;
+	padding:10px;
+	border-radius:50px;
+	border:0.125rem solid rgba(255, 255,255,0.3);
+	
+
+}
+.glogo {
+	border-radius:50%;
+}
+
+.iconTagMargin {
+	margin-right:.625rem;
+}
+/*increase opacity of border on hover */
+
+.glyphicon-user:hover, .glyphicon-search:hover, .glyphicon-option-horizontal:hover {
+
+border:0.125rem solid rgba(255, 255,255,0.9);
+
+}
+
+.glyphicon-menu-hamburger {
+margin-right:1rem;
+top:3px;
+}
+
+
+.glyphicon-comment {
+	
+	top:5px;
+	color:#bdbdbd;
+}
+
+.comment {
+	position:absolute;
+	bottom:2.5rem;
+}
+.rowMargin {
+	margin-left: 15px;
+	margin-right: 40px;
+}
+
+.sideHeader h3{
+
+	margin-top:.7rem;
+
+}
+.greyBorder {
+
+	border-left: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+}
+
+.well {
+	border-radius:0;
+	border:none;
+	border-top:1px solid #4bc6df;
+
+}
+
+.blogLine {
+	border-top:1px solid #4bc6df;
+}
+.blogContainer {
+	width:100%;
+	background: #fff;
+	padding:0;
+}
+
+.blogContainer h3 {
+	padding-left: 1rem;
+}
+
+.blogContainer img {
+	width:100%;
+	margin:auto;
+}
+.blue {
+	
+	color:#00456e;
+}
+
+
+/*media queries */
+
+
+
+@media (max-width:641px){
+
+
+.noPaddingLeftMedia {
+	padding-right: 0;
+}
+
+.noPaddingRightMedia {
+	padding-right: 0;
+}
+
+.breadcrumb {
+	min-height: 65px; /* match height with the rest of the navbar when they are on the same level */
+	padding:18px 15px; /* allign text with other menus */
+}
+.allSections {
+	min-height: 65px;
+}
+}
+/*
+
+@media (min-width: 640px)and  (min-width: 1024px){
+.header {
+	width:602px;
+}
+
+.mainContainer {
+  width: 580px;
+}
+}*/
+@media (min-width: 1024px) {
+/*
+.header {
+	width:940px;
+}
+.mainContainer {
+  width: 940px;
+}
+*/
+
+@media (min-width: 1280px) {
+	.container {
+		width:1300px;
+	}
+}
+}
+
