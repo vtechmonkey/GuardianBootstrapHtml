@@ -127,13 +127,7 @@ h3 {
 	text-decoration: underline;
 }
 
-.flex {
-	display:flex;
-}
 
-.sameHeight {
-	flex:1 1 auto;
-}
 .breadcrumb {
 	margin-bottom: 0;
 }
@@ -247,8 +241,16 @@ top:3px;
 
 
 /*media queries */
+@media (min-width:1024px) {
 
+	.flex {
+		display: flex;
+	}
 
+	.sameHeight {
+		flex: 1 1 auto;
+	}
+}
 
 @media (max-width:641px){
 
