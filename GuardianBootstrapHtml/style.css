@@ -12,6 +12,7 @@ didn't get all the container settings just right so fixed them here, (hadn't tim
 @media all {
 
 body {
+	line-height: 1;
 	background: rgba(51,51,51,0.05);
 }
 
@@ -23,10 +24,8 @@ body {
 .mainMenuBackground {
 		background-color:#00456e;
 	}
-}
-.breadcrumbBackground {
-	background-color:#efefef;
-}
+
+
 .footerMenuBackground {
 	background-color: #196795;
 }
@@ -34,11 +33,13 @@ body {
 .mainContainer {
 	padding-top: 15px;
 	background:#fff;
+
 }
 
 .menuMain {
 	padding-left: 0;
 	padding-right: 0;
+	background-color: #00456e;
 }
 .breadcrumbContainer {
 	padding-left:0;
@@ -63,12 +64,18 @@ body {
   overflow-y:hidden;
 }
 
-
+.navbarScroll li {
+	float:left;
+}
 
 .header {
 	color:#fff;
 	background:#005689;
 	/*width:1140px;*/
+}
+.breadcrumbBackground {
+	background-color:#efefef;
+	background-size: 100% 65px;
 }
 
 .navbar-brand {
@@ -112,11 +119,6 @@ h3 {
 	line-height: 1.5rem;
 
 }
-/*
-h3 {
-	font-weight: 700;
-	color:#4bc6df;
-}*/
 
 .allSections {
 
@@ -130,6 +132,7 @@ h3 {
 
 .breadcrumb {
 	margin-bottom: 0;
+	padding:15px 8px;
 }
 
 .breadcrumb li a {
@@ -141,7 +144,7 @@ h3 {
 .navbar-default .navbar-toggle {
   border: none;
   float:left;
-  padding:2px 10px;
+  padding:2px 0;
 }
 
 .iconNavbar {
@@ -253,6 +256,7 @@ top:3px;
 .blogLine {
 	border-top:1px solid #4bc6df;
 }
+/*
 .blogContainer {
 	width:100%;
 	background: #fff;
@@ -267,14 +271,96 @@ top:3px;
 	width:100%;
 	margin:auto;
 }
+*/
 .blue {
 	
-	color:#00456e;
+	color:#005689;
+}
+.borderLeft {
+	border-left: 0.125rem solid #f1f1f1;
+
 }
 
 
+.fbIcon {
+	border-radius:50%;
+	color:#fff;
+	background-color: #3b5998;
+	padding:.25em .35em .2em;
+	border:solid .08em #3b5998;
+}
+.fbIcon:hover {
+	background-color: #22407F;
+}
+.twitIcon {
+	border-radius:50%;
+	color:#fff;
+	background-color: rgb(64,153,255);
+	padding:.25em .2em;
+	border:solid .08em #4099ff;
+}
+.twitIcon:hover {
+	background-color: #2780e6;
+}
+
+.envIcon {
+	border-radius:50%;
+	color:#fff;
+	background-color:#66512c;
+	padding:.25em;
+	border:solid .08em #66512c;
+}
+
+.envIcon:hover {
+	background-color: #4d3813;
+}
+.pinIcon {
+	border-radius:50%;
+	color:#fff;
+	background-color: #c92228;
+	padding:.25em .2em .2em;
+	border:solid .08em #c92228;
+}
+
+.pinIcon:hover {
+	background-color:#b0090f;
+}
+.linkIcon {
+	border-radius:50%;
+	color:#fff;
+	background-color: #005689;
+	padding:.2em .25em .25em;
+	border:solid .08em #005689;
+}
+.linkIcon:hover {
+	background-color:#003d70;
+}
+.gPlusIcon {
+	border-radius:50%;
+	color:#fff;
+	background-color: #d34836;
+	padding:.25em .3em;
+	border:solid .08em #d34836;
+}
+
+.gPlusIcon:hover {
+	background-color:#ba2f1d;
+}
+.laterIcon {
+	border-radius:50%;
+	color:#fff;
+	background-color: #005689;
+	padding:.25em .3em;
+	border:solid .08em #005689;
+}
+
+.laterIcon:hover {
+	color:#005689;
+	background-color:#fff;
+}
+}
 /*media queries */
-@media (min-width:1024px) {
+@media (min-width:1025px) {
 
 	.flex {
 		display: flex;
@@ -284,51 +370,62 @@ top:3px;
 		flex: 1 1 auto;
 	}
 }
-
+@media (min-width: 741px){
+	.navbar-toggle {
+		display: none;
+	}
+}
+@media (min-width: 741px) {
+	.navbar-collapse.collapse {
+		display: block !important;
+		height: auto !important;
+		padding-bottom: 0;
+		overflow: visible !important;
+	}
+}
+@media (max-width:741px){
+	.gLogo{
+		margin-top:1rem;
+	}
+}
 @media (max-width:641px){
 
-
-.noPaddingLeftMedia {
+.noPadding640 {
 	padding-right: 0;
+	padding-left: 0;
 }
 
-.noPaddingRightMedia {
+.LeftPadding640	{
+	padding-left: 0;
+	}
+.icons > li > a {
+	position: relative;
+	display: block;
+	padding:  10px 0px;
+}
+.noPaddingRight640 {
 	padding-right: 0;
 }
 
 .breadcrumb {
 	min-height: 65px; /* match height with the rest of the navbar when they are on the same level */
-	padding:18px 15px; /* allign text with other menus */
+	padding: 18px 0px 18px 4px;
 }
 .allSections {
 	min-height: 65px;
 }
 }
+
+@media screen and (max-width:1025px){
+	.noLeftPaddingMax {
+		padding-left:0;
+	}
+}
 /*
-
-@media (min-width: 640px)and  (min-width: 1024px){
-.header {
-	width:602px;
-}
-
-.mainContainer {
-  width: 580px;
-}
-}*/
-@media (min-width: 1024px) {
-/*
-.header {
-	width:940px;
-}
-.mainContainer {
-  width: 940px;
-}
-*/
-
 @media (min-width: 1280px) {
 	.container {
 		width:1300px;
 	}
 }
-}
 
+*/

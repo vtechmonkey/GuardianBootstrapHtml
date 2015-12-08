@@ -1,47 +1,46 @@
 <!--
 Author: Sarah O Connor
 Assignment: W12.0 FEWD, Digital SKills Academy
-Student ID:D131126148
-Date:2015/07/17
+
 -->
-<!DOCTYPE html>
-<html lang="en">
+
+<!DOCTYPE html><!-- html 5 -->
+<html lang="en"><!--language  -->
 <head>
-    <meta charset="UTF-8">
-    <title>Guardian Blog</title>
+    <meta charset="UTF-8"><!--charset  -->
+    <title>Guardian Blog</title><!-- title -->
 
-
+    <!--  stylesheets for bootstrap, font awesome icons, fonts, including the font used to resemble the guardian font, custom stylesheet
+            the bootstrap.css was created with the bootstrap customiser so that columns etc are easily calculated-->
     <link href="css\bootstrap.css" rel="stylesheet">
     <link href="css\font-awesome.min.css" rel="stylesheet">
     <link href="fonts\stylesheet.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <script src="jquery-1.11.3.js"></script>
-    <script src="js\bootstrap.js"></script>
 
 
-</head>
-<body>
+</head><!-- close head-->
+<body><!--  body-->
+<div class="guardianBackground">
 <div class="header container">
     <!--  rows and columns used to manipulate the layout of menus and news items at different screen widths-->
     <div class="row">
-        <div class="col-lg-20 col-md-20 col-sm-10 col-xs-10">
-
+        <div class="col-lg-20 col-md-20 col-sm-20 col-xs-10">
             <nav class="navbar iconNavbar navbar-default">
-                <!--top left icon links for subscription and search, don't have a G so used another user icon -->
-                <ul class="nav navbar-nav"><!--navbar class -->
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp<span
-                            class="hidden-sm hidden-xs">sign in</span></a></li>
+                <ul class="nav navbar-nav icons"><!--navbar class -->
+                    <li><a href="#"><span class="glyphicon glyphicon-user iconTagMargin"></span><span
+                            class="hidden-sm hidden-xs ">sign in</span></a></li>
                     <!--hidden class hides items at specified breakpoints -->
-                    <li class="hidden-sm hidden-xs"><a href="#"><span class="glyphicon glyphicon-user"></span><span
-                            class="hidden-sm hidden-xs">subscribe</span></a></li><!--hide icon and text -->
-                    <li><a href="#"><span class="glyphicon glyphicon-search"></span><span class="hidden-sm hidden-xs">search</span></a>
-                    </li>
+                    <li class="hidden-sm hidden-xs"><a href="#"><span><img class="glogo iconTagMargin"
+                                                                           src="img/glogo.jpg"></span><span
+                            class="hidden-sm hidden-xs iconTagMargin">subscribe</span></a></li>
+                    <!--hide icon and text -->
+                    <li><a href="#"><span class="glyphicon glyphicon-search iconTagMargin"></span><span
+                            class="hidden-sm hidden-xs iconTagMargin">search</span></a></li>
                     <li>            <!--toggle button for right menu is in this left menu for mobile view -->
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        <button type="button" class="navbar-toggle collapsed LeftPadding640" data-toggle="collapse"
                                 data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="glyphicon glyphicon-option-horizontal"></span>
-
                         </button>
                     </li>
                 </ul>
@@ -57,47 +56,41 @@ Date:2015/07/17
                         <li><a href="#">more<span class="caret"></span></a></li>
                         <li><a href="#">International</a></li>
                     </ul>
-                </div>
+                </div><!--close navbar collapse-->
             </nav>
-
-        </div>
-        <div class="col-lg-20 col-md-20 col-sm-10 col-xs-10">
-
-
-            <!--guardian logo-->
-            <div class="row">
-                <div class="col-lg-20 col-md-10 col-sm-10 col-xs-10 pull-right">
-                    <!--float the col right with the pull right class-->
-                    <a href="#"><h1 class="pull-right">The Guardian</h1></a>
-                </div>
-            </div><!--close row-->
-        </div>
-    </div>
-
+        </div><!--close col-lg-20-->
+        <div class="col-lg-20 col-md-20 col-sm-20 col-xs-10">
+            <!--&lt;!&ndash;guardian logo&ndash;&gt;-->
+            <!--<div class="row">-->
+                <!--<div class="col-lg-20 col-md-10 col-sm-10 col-xs-10 pull-right">&lt;!&ndash;float the col right with the pull right class&ndash;&gt;-->
+                    <img src="img/guardian_logo.png" alt="guardian logo" class="gLogo img-responsive pull-right">
+                <!--</div>&lt;!&ndash;close col-lg-20&ndash;&gt;-->
+            <!--</div>&lt;!&ndash;close row&ndash;&gt;-->
+        </div><!--close col-lg-20-->
+    </div><!--close row-->
+</div><!--close header container-->
+</div><!--close guardianBackground-->
 
     <div class="container menuMain">
 
         <div class="row">
 
 
-            <div class="col-lg-20 col-md-20 col-sm-15 col-xs-15 pull-right"><!--float right-->
+            <div class="col-lg-20 col-md-20 col-sm-16 col-xs-16 pull-right noLeftPaddingMax"><!--float right-->
                 <div class="row">
-                    <div class="col-lg-17 col-md-17 col-sm-15 col-xs-15 noPaddingRight noPaddingLeftMedia">
+                    <div class="col-lg-17 col-md-17 col-sm-16 col-xs-16 noPaddingRight640 noLeftPaddingMax1125">
                         <!--padding changes with screen size -->
                         <!-- navbar -->
                         <nav class="navbar navbar-default">
                             <!--<div class="container">-->
                             <div class="navbar-header"><!--UK header -->
-
-
-                                <a class="navbar-brand hidden-md hidden-sm hidden-xs" href="#"><span
-                                        class="glyphicon glyphicon-home"></span>&nbsp UK</a>
-                                <!--hiden below lg screen size -->
+                                <a class="navbar-brand hidden-md hidden-sm hidden-xs" href="#"><span class="glyphicon glyphicon-home"></span></a><!--hiden below lg screen size -->
                             </div>
                             <div>
-                                <ul class="nav navbar-nav navbarScroll">
-                                    <!--navbar is to scroll instead of collapse, navbarScroll class hides the scroll bars -->
-                                    <li><a href="#">election</a></li>
+                                <ul class="nav navbar-nav navbarScroll"><!--navbar is to scroll instead of collapse, navbarScroll class hides the scroll bars -->
+                                    <li><a href="#">UK</a></li>
+                                    <li><a href="blog.html">blog</a></li>
+                                    <li><a href="index.html">tech</a></li>
                                     <li><a href="#">world</a></li>
                                     <li><a href="#">sport</a></li>
                                     <li><a href="#">football</a></li>
@@ -107,26 +100,21 @@ Date:2015/07/17
                                     <li><a href="#">lifestyle</a></li>
                                     <li><a href="#">fashion</a></li>
                                     <li><a href="#">environment</a></li>
-                                    <li><a href="blog.html">tech</a></li>
                                     <li><a href="#">travel</a></li>
                                 </ul>
                             </div>
                             <!--</div>-->
                         </nav>
-                    </div>
+                    </div><!--close col-lg-17-->
 
-                    <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5 noPaddingLeft"> <!--media query padding class -->
-                        <nav class="navbar navbar-default allSections " role="navigation">  <!--navbar -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 noPadding640 noPaddingLeft"> <!--media query padding class -->
+                        <nav class="navbar navbar-default allSections" role="navigation">  <!--navbar -->
                             <ul class="nav navbar-nav">
-                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
-                                                        role="button" aria-haspopup="true" aria-expanded="false">
-                                    <!--drop down menu -->
+                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><!--drop down menu -->
 
-                                    <span class="glyphicon glyphicon-menu-hamburger"></span>
-                                    <!--displays a burger menu (at all sizes) -->
+                                    <span class="glyphicon glyphicon-menu-hamburger"></span><!--displays a burger menu (at all sizes) -->
 
-                                    <span>all</span> <span class="hidden-md hidden-sm hidden-xs"> sections</span></a>
-                                    <!--hide 'sections' text if not large screen-->
+                                    <span>all</span> <span class="hidden-md hidden-sm hidden-xs"> sections</span></a> <!--hide 'sections' text if not large screen-->
 
                                     <ul class="dropdown-menu">
                                         <li><a href="#">world</a></li>
@@ -140,88 +128,93 @@ Date:2015/07/17
                                 </li>
 
                             </ul>
-
-
                         </nav>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-20  col-md-20 col-sm-5 col-xs-5 pull-left noPaddingRightMedia "><!--breadcrumb col floats left nb for mobile/tablet view
-         -->
-
-
+                    </div>  <!--close col-lg-3-->
+                </div><!--close row-->
+            </div><!--close col-lg-20-->
+       <!--close row-->
+   <!--end mainMenuBackground -->
+<!--mainMenu-->
+    <!--<div class="breadcrumbBackground">-->
+        <div class="container breadcrumbContainer">
+            <div class="row">
+                <div class="col-lg-20  col-md-20 col-sm-4 col-xs-4 pull-left noPadding640 noLeftPaddingMax1125 "><!--breadcrumb col floats left nb for mobile/tablet view
+                 -->
                 <ol class="breadcrumb"><!-- breadcrumb class -->
                     <li><a href="index.html">home</a></li>
-                    <li><a href="blog.html">tech</a></li><!--blog link -->
+                    <li><a href="index.html">tech</a></li><!--blog link -->
                 </ol>
-
-
             </div>
-
-
+        </div><!--close row-->
+    </div>
+           </div>
         </div>
+<!--close breadcrumbBackground-->
+
+<!--close header-->
+
+
+<!--close header-->
+
+
+<!--main content-->
+
+<div class="container blogContainer">
+
+
+    <h3>twitter</h3>
+
+
+
+
+    <div class="blogLine container "><!--blue line at the top-->
+        <h2>Twitter announces crackdown on abuse with new filter and tighter rules</h2>
+        <h4>Social network moves to ban indirect threats of violence and introduces temporary
+            suspensions for accounts that fall foul of its policies</h4>
+        <!--center text-->
     </div>
-    </div>
-    <!--close header-->
+        <img class="blogImg" src="img/dickCostolo.jpg" alt="dick costolo">
+    <div class="container">
+        <p><i class="fa fa-camera iconTagMargin"></i>Twitter CEO Dick Costolo speaks during the Twitter Seminar as part of CAnes Lions festival.<br>
+            Photograph: Francs G.Durand/Getty Images</p>
 
+        <div class="blue blogLine ">
+            <h4>Alex Hern</h4>
 
-    <!--main content-->
+            <i class="fa fa-twitter"></i>@alexherne<!--font awesome icons -->
+            <p>Tuesday 21 April 2015 16:00 BST </p>
 
-    <div class="container mainContainer">
-
-
-        <h3>twitter</h3>
-
-        <p class="text-center">Spinning Icons of Joy <!-- spinning icons because they are nice -->
-            <i class="fa fa-spinner fa-spin"></i>
-            <i class="fa fa-circle-o-notch fa-spin"></i>
-            <i class="fa fa-refresh fa-spin"></i>
-            <i class="fa fa-cog fa-spin"></i>
-            <i class="fa fa-spinner fa-pulse"></i>
-        </p>
-
-
-        <div class="blogLine"><!--blue line at the top-->
-            <h2 class="text-center">Game developers on Apple Watch: smartwatches are all about context</h2>
-            <!--center text-->
-            <img class="img-responsive" src="img/technology-section/article-1.jpeg" alt="apple watch">
-
-            <p class="text-center"><i class="fa fa-camera"></i>&nbsp20 Apple Watch apps worth trying on launch day – in
-                their developers' words</p>
-
-            <div class="blue blogLine">
-                <h4>Alex Herne</h4>
-
-                <i class="fa fa-twitter"></i>@alexherne<!--font awesome icons -->
-                <p>Tuesday 21 April 2015 16:00 BST </p>
-
-                <div>
-                    <div class="row blogLine">
-
-                        <div class="col-sm-10 col-xs-10">
-                            <i class="fa fa-facebook-official"></i>
-                            <i class="fa fa-twitter"></i>
-                            <i class="fa fa-envelope-o"></i>
-                            <i class="fa fa-linkedIn"></i>
-                            <i class="fa fa-google-plus"></i>
-                            <i class="fa fa-whatsapp"></i>
+        <div class="container">
+                <div class="row blogLine">
+                <h4>
+                    <div class="col-sm-10 col-xs-10">
+                        <a><i class="fa fa-facebook fa-lg fa-border fbIcon"></i></a>
+                        <a><i class="fa fa-twitter fa-lg fa-border twitIcon"></i></a>
+                        <a><i class="fa fa-envelope-o fa-lg fa-border envIcon"></i></a>
+                        <a><i class="fa fa-pinterest-p fa-lg fa-border pinIcon"></i></a>
+                        <a><i class="fa fa-linkedin fa-lg fa-border linkIcon"></i></a>
+                        <a><a><i class="fa fa-google-plus fa-lg fa-border gPlusIcon iconTagMargin"></i></a>
+                        <a><i class="fa fa-bookmark fa-lg fa-border laterIcon iconTagMargin"></i>
+                            <span class="">Save for later</span>
+                        </a>
+                    </div>
+                    <div class="pull-right col-sm-10 col-xs-10">
+                        <div class="col-sm-5">
+                            <i  class="fa fa-share-alt iconTagMargin"></i><span class="iconTagMargin">Shares</span>
                         </div>
-                        <div class="pull-right col-sm-10 col-xs-10"><i
-                                class="fa fa-share-alt"></i><span>&nbspShares</span><i class="fa fa-comment"></i>&nbspComments
-                        </div>
-                        <div class="blogLine">
-                            <p>I am too tired to color in icons <i class="fa fa-meh-o"></i> It is time for wine <i
-                                    class="fa fa-smile-o"></i><i class="fa fa-glass"></i></p>
+                        <div class="col-sm-5 borderLeft">
+                            <i  class="fa fa-comment iconTagMargin"></i>Comments
                         </div>
                     </div>
+                  </h4>
                 </div>
             </div>
         </div>
     </div>
-                <!--speed up page display by putting javascript at the bottom of the page -->
-                <script src="jquery-1.11.3.js"></script><!-- jquery -->
-                <script src="js\bootstrap.js"></script><!-- bootstrap.js -->
+</div>
+<!--speed up page display by putting javascript at the bottom of the page -->
+<script src="jquery-1.11.3.js"></script><!-- jquery -->
+<script src="js\bootstrap.js"></script><!-- bootstrap.js -->
 
 </body><!--close body  -->
 </html><!-- close html -->

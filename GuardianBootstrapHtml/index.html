@@ -1,12 +1,12 @@
 <!--
 Author: Sarah O Connor
 Assignment: W12.0 FEWD, Digital SKills Academy
-Student ID:D131126148
-Date:2015/07/17
+
 -->
 
 <!DOCTYPE html><!-- html 5 -->
 <html lang="en"><!--language  -->
+<head>
     <meta charset="UTF-8"><!--charset  -->
     <title>Guardian Tech</title><!-- title -->
      
@@ -14,64 +14,61 @@ Date:2015/07/17
             the bootstrap.css was created with the bootstrap customiser so that columns etc are easily calculated-->
     <link href="css\bootstrap.css" rel="stylesheet">
     <link href="css\font-awesome.min.css" rel="stylesheet">   
-    <link href="fonts\stylesheet.css" rel="stylesheet"><head><!--  head-->
-
-        <link href="style.css" rel="stylesheet">
+    <link href="fonts\stylesheet.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
    
-
 
 </head><!-- close head-->
 <body><!--  body-->
 <div class="guardianBackground">
     <div class="header container">
-       <!--  rows and columns used to manipulate the layout of menus and news items at different screen widths-->
+        <!--  rows and columns used to manipulate the layout of menus and news items at different screen widths-->
         <div class="row">
             <div class="col-lg-20 col-md-20 col-sm-10 col-xs-10">
-            
                 <nav class="navbar iconNavbar navbar-default">
+                    <ul class="nav navbar-nav icons"><!--navbar class -->
+                        <li><a href="#"><span class="glyphicon glyphicon-user iconTagMargin"></span><span
+                                class="hidden-sm hidden-xs ">sign in</span></a></li>
+                        <!--hidden class hides items at specified breakpoints -->
+                        <li class="hidden-sm hidden-xs"><a href="#"><span><img class="glogo iconTagMargin"
+                                                                               src="img/glogo.jpg"></span><span
+                                class="hidden-sm hidden-xs iconTagMargin">subscribe</span></a></li>
+                        <!--hide icon and text -->
+                        <li><a href="#"><span class="glyphicon glyphicon-search iconTagMargin"></span><span
+                                class="hidden-sm hidden-xs iconTagMargin">search</span></a></li>
+                        <li>            <!--toggle button for right menu is in this left menu for mobile view -->
+                            <button type="button" class="navbar-toggle collapsed LeftPadding640" data-toggle="collapse"
+                                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="glyphicon glyphicon-option-horizontal"></span>
+                            </button>
+                        </li>
+                    </ul>
 
-                        <ul class="nav navbar-nav"><!--navbar class -->
 
-                            <li><a href="#"><span class="glyphicon glyphicon-user iconTagMargin"></span><span class="hidden-sm hidden-xs ">sign in</span></a></li><!--hidden class hides items at specified breakpoints -->
-                            <li class="hidden-sm hidden-xs"><a href="#"><span><img class="glogo iconTagMargin" src="img/glogo.jpg"></span><span class="hidden-sm hidden-xs iconTagMargin">subscribe</span></a></li><!--hide icon and text -->
-                            <li><a href="#"><span class="glyphicon glyphicon-search iconTagMargin"></span><span class="hidden-sm hidden-xs iconTagMargin">search</span></a></li>
-                            <li>            <!--toggle button for right menu is in this left menu for mobile view -->
-                                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                                <span class="sr-only">Toggle navigation</span>
-                                                <span class="glyphicon glyphicon-option-horizontal"></span>
-                                                
-                                            </button>
-                            </li>
+                <!--top right menu-->
+
+
+                    <div id="navbar" class="navbar-collapse collapse"> <!-- class="navbar-collapse collapse"-->
+                        <ul class="nav navbar-nav navbar-right"><!--float right -->
+                            <li><a href="#">jobs</a></li>
+                            <li><a href="#">dating</a></li>
+                            <li><a href="#">more<span class="caret"></span></a></li>
+                            <li><a href="#">International</a></li>
                         </ul>
-                       
-                        
-                        <!--top right menu-->
-                                                             
-                                            
-                        <div id="navbar" class="navbar-collapse collapse"> <!-- class="navbar-collapse collapse"-->
-                            <ul class="nav navbar-nav navbar-right"><!--float right -->
-                                <li><a href="#">jobs</a></li>
-                                <li><a href="#">dating</a></li>
-                                <li><a href="#">more<span class="caret"></span></a></li>
-                                <li><a href="#">International</a></li>
-                            </ul>
-                        </div>
+                    </div><!--close navbar collapse-->
                 </nav>
-     
-            </div>
+            </div><!--close col-lg-20-->
             <div class="col-lg-20 col-md-20 col-sm-10 col-xs-10">
-        
-
                 <!--guardian logo-->
                 <div class="row">
-                        <div class="col-lg-20 col-md-10 col-sm-10 col-xs-10 pull-right"><!--float the col right with the pull right class-->
-                            <img class="pull-right"  src="img/guardian_logo.png"></a>
-                        </div>
+                    <div class="col-lg-20 col-md-10 col-sm-10 col-xs-10 pull-right"><!--float the col right with the pull right class-->
+                        <img src="img/guardian_logo.png" alt="guardian logo" class="pull-right">
+                    </div><!--close col-lg-20-->
                 </div><!--close row-->
-            </div>
-        </div>
-    
-   </div>
+            </div><!--close col-lg-20-->
+        </div><!--close row-->
+    </div><!--close header container-->
 </div><!--close guardianBackground-->
 
 <div class="mainMenuBackground">
@@ -80,37 +77,39 @@ Date:2015/07/17
         <div class="row">
 
 
-            <div class="col-lg-20 col-md-20 col-sm-15 col-xs-15 pull-right"><!--float right-->
+            <div class="col-lg-20 col-md-20 col-sm-15 col-xs-16 pull-right"><!--float right-->
                 <div class="row">
-                    <div class="col-lg-17 col-md-17 col-sm-15 col-xs-15 noPaddingRight noPaddingLeftMedia"><!--padding changes with screen size -->
+                    <div class="col-lg-17 col-md-17 col-sm-15 col-xs-16 noPaddingRight noPadding640">
+                        <!--padding changes with screen size -->
                         <!-- navbar -->
                         <nav class="navbar navbar-default">
                             <!--<div class="container">-->
                             <div class="navbar-header"><!--UK header -->
-                                <a class="navbar-brand hidden-md hidden-sm hidden-xs" href="#"><span class="glyphicon glyphicon-home"></span>&nbsp UK</a><!--hiden below lg screen size -->
+                                <a class="navbar-brand hidden-md hidden-sm hidden-xs" href="#"><span class="glyphicon glyphicon-home"></span></a><!--hiden below lg screen size -->
                             </div>
                             <div>
                                 <ul class="nav navbar-nav navbarScroll"><!--navbar is to scroll instead of collapse, navbarScroll class hides the scroll bars -->
+                                    <li><a href="#">UK</a></li>
+                                    <li><a href="blog.html">blog</a></li>
                                     <li><a href="#">election</a></li>
-                                    <li><a href="#about">world</a></li>
-                                    <li><a href="#contact">sport</a></li>
-                                    <li><a href="#about">football</a></li>
-                                    <li><a href="#contact">opinion</a></li>
-                                    <li><a href="#about">culture</a></li>
-                                    <li><a href="#contact">business</a></li>
-                                    <li><a href="#contact">lifestyle</a></li>
-                                    <li><a href="#about">fashion</a></li>
-                                    <li><a href="#contact">environment</a></li>
-                                    <li><a href="blog.html">tech</a></li>
-                                    <li><a href="#contact">travel</a></li>
-                                 </ul>
+                                    <li><a href="#">world</a></li>
+                                    <li><a href="#">sport</a></li>
+                                    <li><a href="#">football</a></li>
+                                    <li><a href="#">opinion</a></li>
+                                    <li><a href="#">culture</a></li>
+                                    <li><a href="#">business</a></li>
+                                    <li><a href="#">lifestyle</a></li>
+                                    <li><a href="#">fashion</a></li>
+                                    <li><a href="#">environment</a></li>
+                                    <li><a href="#">travel</a></li>
+                                </ul>
                             </div>
                             <!--</div>-->
                         </nav>
                     </div><!--close col-lg-17-->
 
-                    <div class="col-lg-3 col-md-3 col-sm-5 col-xs-5 noPaddingLeft"> <!--media query padding class -->
-                        <nav class="navbar navbar-default allSections " role="navigation">  <!--navbar -->
+                    <div class="col-lg-3 col-md-3 col-sm-5 col-xs-4 noPadding640"> <!--media query padding class -->
+                        <nav class="navbar navbar-default allSections" role="navigation">  <!--navbar -->
                             <ul class="nav navbar-nav">
                                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><!--drop down menu -->
 
@@ -140,18 +139,18 @@ Date:2015/07/17
     <div class="breadcrumbBackground">
         <div class="container breadcrumbContainer">
             <div class="row">
-                <div class="col-lg-20  col-md-20 col-sm-5 col-xs-5 pull-left noPaddingRightMedia "><!--breadcrumb col floats left nb for mobile/tablet view
+                <div class="col-lg-20  col-md-20 col-sm-5 col-xs-4 pull-left noPadding640 "><!--breadcrumb col floats left nb for mobile/tablet view
                  -->
                     <ol class="breadcrumb"><!-- breadcrumb class -->
                         <li><a href="index.html">home</a></li>
-                        <li><a href="blog.html">tech</a></li><!--blog link -->
+                        <li><a href="index.html">tech</a></li><!--blog link -->
                     </ol>
                 </div>
             </div><!--close row-->
         </div>
     </div><!--close breadcrumbBackground-->
 
-</div><!--close header-->
+<!--close header-->
 
 
 
@@ -159,10 +158,10 @@ Date:2015/07/17
 <div class="container mainContainer" ><!--main content container-->
     <div class="row rowMargin flex"><!--top row of oolumns-->
     
-        <div class="col-lg-4 col-md-4 col-sm-20 blogLine sideHeader"><!--top left col-->
+        <div class="col-lg-4 col-md-20 col-sm-20 blogLine sideHeader"><!--top left col-->
                 <h3>technology</h3>
         </div>
-        <div class=" col-lg-8  col-md-8 col-sm-20 flex"><!--second top left col-->
+        <div class=" col-lg-8  col-md-10 col-sm-20 flex"><!--second top left col-->
                 <div class="well sameHeight plum"><!--well container-->
                     <img class="img-responsive" src="img/technology-section/article-1.jpeg" alt="apple watch">
                     <div class="wellText">
@@ -171,7 +170,7 @@ Date:2015/07/17
                     </div>
                 </div>
         </div>
-            <div class="col-lg-4 col-md-4 col-sm-20 greyBorder flex">
+            <div class="col-lg-4 col-md-5 col-sm-20 greyBorder flex">
                 <div class="well sameHeight">
 
                     <div class="row">
@@ -195,7 +194,7 @@ Date:2015/07/17
 
 
 
-        <div class="col-lg-4 col-md-4 col-sm-20 flex">
+        <div class="col-lg-4 col-md-5 col-sm-20 flex">
             <div class="well sameHeight">
                 <div class="row">
                     <div class="col-xs-10 col-sm-10 col-lg-20 col-md-20">
@@ -205,7 +204,7 @@ Date:2015/07/17
                         <h4>Crowdfunding a war: Ukraine's DIY drone-makers</h4>
                         <p class="hidden-md hidden-sm hidden-xs">In a David versus Goliath-like battle, Ukrainian forces look to private companies and crowdfunded volunteer organisations for technological help.</p>
                     </div>
-                    <div class="comment clearfix">
+                    <div class="comment">
                         <span class="glyphicon glyphicon-comment iconTagMargin"></span><span>12 comments</span>
                     </div>
                 </div>
@@ -216,7 +215,7 @@ Date:2015/07/17
     
 <!--second row-->
     <div class="row rowMargin flex">
-        <div class="col-sm-20 col-md-4 col-md-offset-4 col-lg-4  col-lg-offset-4 flex">
+        <div class="col-sm-20 col-md-5 col-lg-4  col-lg-offset-4 flex">
             <div class="well sameHeight">
                 <div class="wellText">
                     <h4>Review / Samsung Galaxy S6 review: the iPhone killer</h4>
@@ -226,31 +225,31 @@ Date:2015/07/17
                 </div>
             </div>
         </div>
-        <div class="col-sm-20 col-md-4 col-lg-4 greyBorder flex">
+        <div class="col-sm-20 col-md-5 col-lg-4 greyBorder flex">
             <div class="well sameHeight">
                 <div class="wellText">
                 <h4>EU warns of 'point of no return' if internet firms are not regulated soon</h4>
-                    <div class="comment clearfix">
+                    <div class="comment">
                         <span class="glyphicon glyphicon-comment iconTagMargin"></span><span>12 comments</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-20 col-md-4 col-lg-4 greyBorder flex">
+        <div class="col-sm-20 col-md-5 col-lg-4 greyBorder flex">
             <div class="well sameHeight plum">
                 <div class="wellText">
                     <h4>Spotify data hints at a 'musical midlife crisis' for 42-year-old music fans</h4>
                     <div class="comment">
-                        <span class="glyphicon glyphicon-comment iconTagMargin clearfix"></span><span>12 comments</span>
+                        <span class="glyphicon glyphicon-comment iconTagMargin"></span><span>12 comments</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-20 col-md-4 col-lg-4 flex">
-            <div class="well sameHeight clearfix">
+        <div class="col-sm-20 col-md-5 col-lg-4 flex">
+            <div class="well sameHeight">
                 <div class="wellText">
                     <h4>Seven of Twitter's 11 top executives tweet less than once a day</h4>
-                    <div class="comment clearfix">
+                    <div class="comment">
                         <span class="glyphicon glyphicon-comment iconTagMargin"></span><span>12 comments</span>
                     </div>
                 </div>
