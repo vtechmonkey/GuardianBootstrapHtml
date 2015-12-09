@@ -20,6 +20,7 @@ Assignment: W12.0 FEWD, Digital SKills Academy
 
 </head><!-- close head-->
 <body><!--  body-->
+<!--<div class="container">-->
 <div class="guardianBackground">
 <div class="header container">
     <!--  rows and columns used to manipulate the layout of menus and news items at different screen widths-->
@@ -76,7 +77,7 @@ Assignment: W12.0 FEWD, Digital SKills Academy
         <div class="row">
 
 
-            <div class="col-lg-20 col-md-20 col-sm-16 col-xs-16 pull-right noLeftPaddingMax"><!--float right-->
+            <div class="col-lg-20 col-md-20 col-sm-16 col-xs-15 pull-right noLeftPaddingMax"><!--float right-->
                 <div class="row">
                     <div class="col-lg-17 col-md-17 col-sm-16 col-xs-16 noPaddingRight640 noLeftPaddingMax1125">
                         <!--padding changes with screen size -->
@@ -107,7 +108,7 @@ Assignment: W12.0 FEWD, Digital SKills Academy
                         </nav>
                     </div><!--close col-lg-17-->
 
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 noPadding640 noPaddingLeft"> <!--media query padding class -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 noPaddingLeft noPaddingRight"> <!--media query padding class -->
                         <nav class="navbar navbar-default allSections" role="navigation">  <!--navbar -->
                             <ul class="nav navbar-nav">
                                 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><!--drop down menu -->
@@ -138,7 +139,7 @@ Assignment: W12.0 FEWD, Digital SKills Academy
     <!--<div class="breadcrumbBackground">-->
         <div class="container breadcrumbContainer">
             <div class="row">
-                <div class="col-lg-20  col-md-20 col-sm-4 col-xs-4 pull-left noPadding640 noLeftPaddingMax1125 "><!--breadcrumb col floats left nb for mobile/tablet view
+                <div class="col-lg-20  col-md-20 col-sm-4 col-xs-5 pull-left rightPadding640 noLeftPaddingMax1125 "><!--breadcrumb col floats left nb for mobile/tablet view
                  -->
                 <ol class="breadcrumb"><!-- breadcrumb class -->
                     <li><a href="index.html">home</a></li>
@@ -159,7 +160,7 @@ Assignment: W12.0 FEWD, Digital SKills Academy
 
 <!--main content-->
 
-<div class="container blogContainer">
+<div class="container">
 
 
     <h3>twitter</h3>
@@ -172,7 +173,9 @@ Assignment: W12.0 FEWD, Digital SKills Academy
         <h4>Social network moves to ban indirect threats of violence and introduces temporary
             suspensions for accounts that fall foul of its policies</h4>
         <!--center text-->
-    </div>
+    </div> <!--close blogLine container-->
+</div><!--close container-->
+
         <img class="blogImg" src="img/dickCostolo.jpg" alt="dick costolo">
     <div class="container">
         <p><i class="fa fa-camera iconTagMargin"></i>Twitter CEO Dick Costolo speaks during the Twitter Seminar as part of CAnes Lions festival.<br>
@@ -194,8 +197,8 @@ Assignment: W12.0 FEWD, Digital SKills Academy
                         <a><i class="fa fa-pinterest-p fa-lg fa-border pinIcon"></i></a>
                         <a><i class="fa fa-linkedin fa-lg fa-border linkIcon"></i></a>
                         <a><a><i class="fa fa-google-plus fa-lg fa-border gPlusIcon iconTagMargin"></i></a>
-                        <a><i class="fa fa-bookmark fa-lg fa-border laterIcon iconTagMargin"></i>
-                            <span class="">Save for later</span>
+                        <a><i class="fa fa-bookmark fa-lg fa-border laterIcon iconTagMargin" id="later"></i>
+                            <span class="laterTag" id="laterTag">Save for later</span>
                         </a>
                     </div>
                     <div class="pull-right col-sm-10 col-xs-10">
@@ -212,9 +215,10 @@ Assignment: W12.0 FEWD, Digital SKills Academy
         </div>
     </div>
 </div>
+</div>
 <!--speed up page display by putting javascript at the bottom of the page -->
 <script src="jquery-1.11.3.js"></script><!-- jquery -->
 <script src="js\bootstrap.js"></script><!-- bootstrap.js -->
-
+<script src="js\guardian.js"></script>
 </body><!--close body  -->
 </html><!-- close html -->

@@ -14,9 +14,17 @@ didn't get all the container settings just right so fixed them here, (hadn't tim
 body {
 	line-height: 1;
 	background: rgba(51,51,51,0.05);
+	font-family: "merriweather_bold", Georgia, "Times New Roman", Times, serif;
 }
-
-
+li {
+	font-weight: 600;
+}
+.navbar {
+	min-height:40px;
+}
+.navbar li {
+	font-weight:600;
+}
 .guardianBackground {
 	background-color: #005689;
 	}
@@ -37,8 +45,8 @@ body {
 }
 
 .menuMain {
-	padding-left: 0;
-	padding-right: 0;
+/*/	padding-left: 0;*/
+	/*padding-right: 0;*/
 	background-color: #00456e;
 }
 .breadcrumbContainer {
@@ -59,7 +67,7 @@ body {
 
   overflow: scroll;
   white-space: nowrap;
-  max-height: 50px;
+  max-height: 40px;
   overflow-x:hidden;
   overflow-y:hidden;
 }
@@ -67,7 +75,10 @@ body {
 .navbarScroll li {
 	float:left;
 }
-
+	.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+		color: #fff;
+		background-color: transparent;
+	}
 .header {
 	color:#fff;
 	background:#005689;
@@ -132,9 +143,11 @@ h3 {
 
 .breadcrumb {
 	margin-bottom: 0;
-	padding:15px 8px;
+	padding:10px 8px;
 }
-
+.breadcrumb li {
+	margin: .4rem 0;
+}
 .breadcrumb li a {
 
 	color:#005689;
@@ -358,6 +371,14 @@ top:3px;
 	color:#005689;
 	background-color:#fff;
 }
+	.laterIconHover {
+		color:#005689;
+		background-color:#fff;
+	}
+.laterTag {
+	color:#005689;
+	text-decoration: none;
+}
 }
 /*media queries */
 @media (min-width:1025px) {
@@ -398,6 +419,9 @@ top:3px;
 .LeftPadding640	{
 	padding-left: 0;
 	}
+.rightPadding640 {
+	right-padding:10px;
+}
 .icons > li > a {
 	position: relative;
 	display: block;
@@ -408,12 +432,15 @@ top:3px;
 }
 
 .breadcrumb {
-	min-height: 65px; /* match height with the rest of the navbar when they are on the same level */
-	padding: 18px 0px 18px 4px;
+	/*min-height: 65px; !* match height with the rest of the navbar when they are on the same level *!*/
+	/*padding: 18px 0px 18px 4px;*/
 }
 .allSections {
-	min-height: 65px;
+	/*min-height: 65px;*/
 }
+	.navbar-nav {
+		 margin: 0;
+	}
 }
 
 @media screen and (max-width:1025px){
