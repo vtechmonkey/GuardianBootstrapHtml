@@ -188,6 +188,7 @@ didn't get all the container settings just right so fixed them here, (hadn't tim
 
     .glogo {
         border-radius: 50%;
+        margin:4px;
     }
 
     .iconTagMargin {
