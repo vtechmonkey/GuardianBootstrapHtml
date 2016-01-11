@@ -1,0 +1,538 @@
+/*
+Author: Sarah O Connor
+Assignment: W12.0 FEWD, Digital SKills Academy
+Student ID:D131126148
+Date:2015/07/17
+
+custom css is also in the bootstrap.css file created from bootstrap customiser, i.e. number of columns,
+didn't get all the container settings just right so fixed them here, (hadn't time to redo it).
+*/
+
+/*css applied to all media*/
+@media all {
+
+    body {
+        line-height: 1;
+        background: rgba(51, 51, 51, 0.05);
+        font-family: "merriweather_bold", Georgia, "Times New Roman", Times, serif;
+    }
+
+    li {
+        font-weight: 600;
+    }
+
+    .navbar {
+        min-height: 40px;
+    }
+
+    .navbar li {
+        font-weight: 600;
+    }
+
+    .guardianBackground {
+        background-color: #005689;
+    }
+
+    .footerMenuBackground {
+        background-color: #196795;
+    }
+
+    .mainContainer {
+        padding-top: 15px;
+        background: #fff;
+
+    }
+
+    .menuMain {
+        /*/	padding-left: 0;*/
+        /*padding-right: 0;*/
+        background-color: #00456e;
+
+    }
+
+    .breadcrumbContainer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .noPaddingLeft {
+        padding-left: 0;
+    }
+
+    .noPaddingRight {
+        padding-right: 0;
+    }
+
+    /*scroll instead of collapse main nav, hide scroll bars */
+    .navbarScroll {
+
+        overflow: scroll;
+        white-space: nowrap;
+        max-height: 40px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .navbarScroll li {
+        float: left;
+    }
+
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+        color: #fff;
+        background-color: transparent;
+    }
+
+    .header {
+        color: #fff;
+        background: #005689;
+        /*width:1140px;*/
+    }
+
+    .breadcrumbBackground {
+        background-color: #efefef;
+        background-size: 100% 65px;
+    }
+
+    .navbar-brand {
+        font-size: 14px;
+        line-height: 2.25rem;
+        font-weight: 500;
+    }
+
+    .navbar {
+        margin-bottom: 0;
+        border: none;
+    }
+
+    .navbar li {
+        font-weight: 500;
+        line-height: 2.25rem;
+    }
+
+    .navbar-default .navbar-nav li a:hover, nav li a:focus {
+
+        color: #fff;
+    }
+
+    .backToTop {
+        min-height: 50px;
+        color: #fff;
+        background-color: #005689;
+        padding: 15px
+    }
+
+    .footerFooter {
+        background-color: #484848;
+        color: #dcdcdc;
+        min-height: 200px;
+    }
+
+    h1 {
+        font-weight: 900;
+    }
+
+    h3 {
+        font-weight: 900;
+        color: #00456e;
+        line-height: 1.5rem;
+
+    }
+
+    .allSections {
+
+        background: #333;
+    }
+
+    .allSections li {
+        text-decoration: underline;
+    }
+
+    .breadcrumb {
+        margin-bottom: 0;
+        padding: 10px 8px;
+    }
+
+    .breadcrumb li {
+        margin: .4rem 0;
+    }
+
+    .breadcrumb li a {
+
+        color: #005689;
+
+    }
+
+    .navbar-default .navbar-toggle {
+        border: none;
+        float: left;
+        padding: 2px 0;
+    }
+
+    .iconNavbar {
+        background: transparent;
+    }
+
+    .iconNavbar li {
+        float: left;
+    }
+
+    /*circle for icons */
+    .glyphicon-user, .glyphicon-search, .glyphicon-option-horizontal {
+        color: #fff;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 50px;
+        border: 0.125rem solid rgba(255, 255, 255, 0.3);
+
+    }
+
+    .glogo {
+        border-radius: 50%;
+    }
+
+    .iconTagMargin {
+        margin-right: .625rem;
+    }
+
+    /*increase opacity of border on hover */
+    .glyphicon-user:hover, .glyphicon-search:hover, .glyphicon-option-horizontal:hover {
+
+        border: 0.125rem solid rgba(255, 255, 255, 0.9);
+
+    }
+
+    .glyphicon-menu-hamburger {
+        margin-right: 1rem;
+        top: 3px;
+    }
+
+    .glyphicon-comment {
+
+        top: 5px;
+        color: #bdbdbd;
+        margin-left: 2rem;
+    }
+
+    .comment {
+        position: absolute;
+        bottom: 2.5rem;
+    }
+
+    .plum {
+        background-color: #951c55;
+        color: #fff;
+    }
+
+    .plum .comment {
+        color: #fdadba;
+    }
+
+    .plum .glyphicon-comment {
+        color: #fdadba
+    }
+
+    .allStoriesBtn {
+        color: #005689;
+        border-color: #4bc6df;
+        border-radius: 62.5rem;
+        position: absolute;
+        bottom: 20px;
+
+    }
+
+    .wellText {
+        padding: 5px 19px 10px;
+    }
+
+    .allStoriesBtn:hover, .allStoriesBtn:focus, .allStoriesBtn:active {
+        color: #333;
+        background-color: #fff;
+        border-color: #a4a4a4;
+
+    }
+
+    .rowMargin {
+        margin-left: 15px;
+        margin-right: 40px;
+    }
+
+    .sideHeader h3 {
+
+        margin-top: .7rem;
+
+    }
+
+    .greyBorder {
+
+        border-left: 1px solid #dfdfdf;
+        border-right: 1px solid #dfdfdf;
+    }
+
+    .well {
+        border-radius: 0;
+        border: none;
+        border-top: 1px solid #4bc6df;
+        padding: 0 0 20px 0;
+
+    }
+
+    .blogLine {
+        border-top: 1px solid #4bc6df;
+    }
+
+    .blogImg {
+        display: block;
+        width:100%;
+
+    }
+
+    /*
+    .blogContainer {
+        width:100%;
+        background: #fff;
+        padding:0;
+    }
+
+    .blogContainer h3 {
+        padding-left: 1rem;
+    }
+
+    .blogContainer img {
+        width:100%;
+        margin:auto;
+    }
+    */
+    .blue {
+
+        color: #005689;
+    }
+
+    .paddingTop2rem {
+        padding-top: 2rem;
+    }
+
+    .borderLeft {
+        border-left: 0.125rem solid #f1f1f1;
+
+    }
+
+    .glyphicon-resize-full {
+        position: absolute;
+        right: 2rem;
+        top: 1rem;
+        z-index: 2;
+        color: #fff;
+    }
+
+    .fbIcon {
+        border-radius: 50%;
+        color: #fff;
+        background-color: #3b5998;
+        padding: .25em .35em .2em;
+        border: solid .08em #3b5998;
+    }
+
+    .fbIcon:hover {
+        background-color: #22407F;
+    }
+
+    .twitIcon {
+        border-radius: 50%;
+        color: #fff;
+        background-color: rgb(64, 153, 255);
+        padding: .25em .2em;
+        border: solid .08em #4099ff;
+    }
+
+    .twitIcon:hover {
+        background-color: #2780e6;
+    }
+
+    .envIcon {
+        border-radius: 50%;
+        color: #fff;
+        background-color: #66512c;
+        padding: .25em;
+        border: solid .08em #66512c;
+    }
+
+    .envIcon:hover {
+        background-color: #4d3813;
+    }
+
+    .pinIcon {
+        border-radius: 50%;
+        color: #fff;
+        background-color: #c92228;
+        padding: .25em .2em .2em;
+        border: solid .08em #c92228;
+    }
+
+    .pinIcon:hover {
+        background-color: #b0090f;
+    }
+
+    .linkIcon {
+        border-radius: 50%;
+        color: #fff;
+        background-color: #005689;
+        padding: .2em .25em .25em;
+        border: solid .08em #005689;
+    }
+
+    .linkIcon:hover {
+        background-color: #003d70;
+    }
+
+    .gPlusIcon {
+        border-radius: 50%;
+        color: #fff;
+        background-color: #d34836;
+        padding: .25em .3em;
+        border: solid .08em #d34836;
+    }
+
+    .gPlusIcon:hover {
+        background-color: #ba2f1d;
+    }
+
+    .laterIcon {
+        border-radius: 50%;
+        color: #fff;
+        background-color: #005689;
+        padding: .25em .3em;
+        border: solid .08em #005689;
+    }
+
+    .laterIcon:hover {
+        color: #005689;
+        background-color: #fff;
+    }
+
+    .laterIconHover {
+        color: #005689;
+        background-color: #fff;
+    }
+
+    .laterTag {
+        color: #005689;
+        text-decoration: none;
+    }
+}
+
+/*media queries */
+@media (max-width: 1025px){
+    .breadcrumb li {
+        margin: .8rem 0;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    #laterLink {
+        position: absolute;
+        bottom:0;
+        left:0;
+    }
+    .blogIcon {
+        position: relative;
+        min-height: 180px;
+    }
+    .breadcrumbBackground {
+        background-color: #efefef;
+        position: absolute;
+        width: 100%;
+        height: 42px;
+        margin-top: 50px
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .sameHeight {
+        flex: 1 1 auto;
+    }
+}
+
+@media (min-width: 741px) {
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+@media (min-width: 741px) {
+    .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+}
+
+@media (max-width: 741px) {
+    .gLogo {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 641px) {
+
+    .noPadding640 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .LeftPadding640 {
+        padding-left: 0;
+    }
+
+    .rightPadding640 {
+        right-padding: 10px;
+    }
+
+    .icons > li > a {
+        position: relative;
+        display: block;
+        padding: 10px 0px;
+    }
+
+    .noPaddingRight640 {
+        padding-right: 0;
+    }
+
+    .breadcrumb {
+        /*min-height: 65px; !* match height with the rest of the navbar when they are on the same level *!*/
+        /*padding: 18px 0px 18px 4px;*/
+    }
+
+    .allSections {
+        /*min-height: 65px;*/
+    }
+
+    .navbar-nav {
+        margin: 0;
+    }
+}
+@media (min-width:640px){
+    .mainMenuBackground {
+        background-color: #00456e;
+        position: absolute;
+        width: 100%;
+        height: 50px;
+    }
+}
+@media screen and (max-width: 1025px) {
+    .noLeftPaddingMax {
+        padding-left: 0;
+    }
+}
+
+/*
+@media (min-width: 1280px) {
+	.container {
+		width:1300px;
+	}
+}
+
+*/

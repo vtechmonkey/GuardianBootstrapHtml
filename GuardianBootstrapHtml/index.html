@@ -9,22 +9,24 @@ Assignment: W12.0 FEWD, Digital SKills Academy
 <head>
     <meta charset="UTF-8"><!--charset  -->
     <title>Guardian Tech</title><!-- title -->
-     
+
     <!--  stylesheets for bootstrap, font awesome icons, fonts, including the font used to resemble the guardian font, custom stylesheet
             the bootstrap.css was created with the bootstrap customiser so that columns etc are easily calculated-->
-    <link href="css\bootstrap.css" rel="stylesheet">
-    <link href="css\font-awesome.min.css" rel="stylesheet">   
-    <link href="fonts\stylesheet.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-   
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
+    <link href="fonts/stylesheet.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
 
 </head><!-- close head-->
 <body><!--  body-->
+<!--<div class="container">-->
 <div class="guardianBackground">
     <div class="header container">
         <!--  rows and columns used to manipulate the layout of menus and news items at different screen widths-->
         <div class="row">
-            <div class="col-lg-20 col-md-20 col-sm-10 col-xs-10">
+            <div class="col-lg-20 col-md-20 col-sm-20 col-xs-10">
                 <nav class="navbar iconNavbar navbar-default">
                     <ul class="nav navbar-nav icons"><!--navbar class -->
                         <li><a href="#"><span class="glyphicon glyphicon-user iconTagMargin"></span><span
@@ -46,7 +48,7 @@ Assignment: W12.0 FEWD, Digital SKills Academy
                     </ul>
 
 
-                <!--top right menu-->
+                    <!--top right menu-->
 
 
                     <div id="navbar" class="navbar-collapse collapse"> <!-- class="navbar-collapse collapse"-->
@@ -59,96 +61,105 @@ Assignment: W12.0 FEWD, Digital SKills Academy
                     </div><!--close navbar collapse-->
                 </nav>
             </div><!--close col-lg-20-->
-            <div class="col-lg-20 col-md-20 col-sm-10 col-xs-10">
-                <!--guardian logo-->
-                <div class="row">
-                    <div class="col-lg-20 col-md-10 col-sm-10 col-xs-10 pull-right"><!--float the col right with the pull right class-->
-                        <img src="img/guardian_logo.png" alt="guardian logo" class="pull-right">
-                    </div><!--close col-lg-20-->
-                </div><!--close row-->
+            <div class="col-lg-20 col-md-20 col-sm-20 col-xs-10">
+                <!--&lt;!&ndash;guardian logo&ndash;&gt;-->
+                <!--<div class="row">-->
+                <!--<div class="col-lg-20 col-md-10 col-sm-10 col-xs-10 pull-right">&lt;!&ndash;float the col right with the pull right class&ndash;&gt;-->
+                <img src="img/guardian_logo.png" alt="guardian logo" class="gLogo img-responsive pull-right">
+                <!--</div>&lt;!&ndash;close col-lg-20&ndash;&gt;-->
+                <!--</div>&lt;!&ndash;close row&ndash;&gt;-->
             </div><!--close col-lg-20-->
         </div><!--close row-->
     </div><!--close header container-->
 </div><!--close guardianBackground-->
 
-<div class="mainMenuBackground">
-    <div class="container menuMain">
+<div class="mainMenuBackground"></div>
+<div class="breadcrumbBackground"></div>
+<div class="container menuMain">
 
-        <div class="row">
+    <div class="row">
 
 
-            <div class="col-lg-20 col-md-20 col-sm-15 col-xs-16 pull-right"><!--float right-->
-                <div class="row">
-                    <div class="col-lg-17 col-md-17 col-sm-15 col-xs-16 noPaddingRight noPadding640">
-                        <!--padding changes with screen size -->
-                        <!-- navbar -->
-                        <nav class="navbar navbar-default">
-                            <!--<div class="container">-->
-                            <div class="navbar-header"><!--UK header -->
-                                <a class="navbar-brand hidden-md hidden-sm hidden-xs" href="#"><span class="glyphicon glyphicon-home"></span></a><!--hiden below lg screen size -->
-                            </div>
-                            <div>
-                                <ul class="nav navbar-nav navbarScroll"><!--navbar is to scroll instead of collapse, navbarScroll class hides the scroll bars -->
-                                    <li><a href="#">UK</a></li>
-                                    <li><a href="blog.html">blog</a></li>
-                                    <li><a href="#">election</a></li>
+        <div class="col-lg-20 col-md-20 col-sm-15 col-xs-15 pull-right noLeftPaddingMax"><!--float right-->
+            <div class="row">
+                <div class="col-lg-17 col-md-17  col-xs-16 noPaddingRight640 noLeftPaddingMax1125">
+                    <!--padding changes with screen size -->
+                    <!-- navbar -->
+                    <nav class="navbar navbar-default">
+                        <!--<div class="container">-->
+                        <div class="navbar-header"><!--UK header -->
+                            <a class="navbar-brand hidden-md hidden-sm hidden-xs" href="#"><span
+                                    class="glyphicon glyphicon-home"></span></a><!--hiden below lg screen size -->
+                        </div>
+                        <div>
+                            <ul class="nav navbar-nav navbarScroll">
+                                <!--navbar is to scroll instead of collapse, navbarScroll class hides the scroll bars -->
+                                <li><a href="#">UK</a></li>
+                                <li><a href="blog.html">blog</a></li>
+                                <li><a href="index.html">tech</a></li>
+                                <li><a href="#">world</a></li>
+                                <li><a href="#">sport</a></li>
+                                <li><a href="#">football</a></li>
+                                <li><a href="#">opinion</a></li>
+                                <li><a href="#">culture</a></li>
+                                <li><a href="#">business</a></li>
+                                <li><a href="#">fashion</a></li>
+                                <li><a href="#">environment</a></li>
+                                <li><a href="#">travel</a></li>
+                            </ul>
+                        </div><!--</div>-->
+                    </nav>
+                </div><!--close col-lg-17-->
+
+                <div class="col-lg-3 col-md-3  col-xs-4 noPaddingLeft noPaddingRight"> <!--media query padding class -->
+                    <nav class="navbar navbar-default allSections" role="navigation">  <!--navbar -->
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"
+                                                    role="button" aria-haspopup="true" aria-expanded="false">
+                                <!--drop down menu -->
+
+                                <span class="glyphicon glyphicon-menu-hamburger"></span>
+                                <!--displays a burger menu (at all sizes) -->
+
+                                <span>all</span> <span class="hidden-md hidden-sm hidden-xs"> sections</span></a>
+                                <!--hide 'sections' text if not large screen-->
+
+                                <ul class="dropdown-menu">
                                     <li><a href="#">world</a></li>
                                     <li><a href="#">sport</a></li>
                                     <li><a href="#">football</a></li>
-                                    <li><a href="#">opinion</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">opinion</li>
                                     <li><a href="#">culture</a></li>
-                                    <li><a href="#">business</a></li>
-                                    <li><a href="#">lifestyle</a></li>
-                                    <li><a href="#">fashion</a></li>
-                                    <li><a href="#">environment</a></li>
-                                    <li><a href="#">travel</a></li>
+                                    <li><a href="#">tech</a></li>
                                 </ul>
-                            </div>
-                            <!--</div>-->
-                        </nav>
-                    </div><!--close col-lg-17-->
+                            </li>
 
-                    <div class="col-lg-3 col-md-3 col-sm-5 col-xs-4 noPadding640"> <!--media query padding class -->
-                        <nav class="navbar navbar-default allSections" role="navigation">  <!--navbar -->
-                            <ul class="nav navbar-nav">
-                                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><!--drop down menu -->
+                        </ul>
+                    </nav>
+                </div>  <!--close col-lg-3-->
+            </div><!--close row-->
+        </div><!--close col-lg-20-->
+        <!--close row-->
+        <!--end mainMenuBackground -->
+        <!--mainMenu-->
 
-                                   <span class="glyphicon glyphicon-menu-hamburger"></span><!--displays a burger menu (at all sizes) -->
-
-                                    <span>all</span> <span class="hidden-md hidden-sm hidden-xs"> sections</span></a> <!--hide 'sections' text if not large screen-->
-
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">world</a></li>
-                                        <li><a href="#">sport</a></li>
-                                        <li><a href="#">football</a></li>
-                                        <li role="separator" class="divider"></li>
-                                        <li class="dropdown-header">opinion</li>
-                                        <li><a href="#">culture</a></li>
-                                        <li><a href="#">tech</a></li>
-                                    </ul>
-                                </li>
-
-                            </ul>
-                        </nav>
-                    </div>  <!--close col-lg-3-->
-                </div><!--close row-->
-            </div><!--close col-lg-20-->
-        </div><!--close row-->
-    </div><!--end mainMenuBackground -->
-</div><!--mainMenu-->
-    <div class="breadcrumbBackground">
         <div class="container breadcrumbContainer">
             <div class="row">
-                <div class="col-lg-20  col-md-20 col-sm-5 col-xs-4 pull-left noPadding640 "><!--breadcrumb col floats left nb for mobile/tablet view
+                <div class="col-lg-20  col-md-20 col-sm-5 col-xs-5 pull-left rightPadding640 noLeftPaddingMax1125 "><!--breadcrumb col floats left nb for mobile/tablet view
                  -->
                     <ol class="breadcrumb"><!-- breadcrumb class -->
                         <li><a href="index.html">home</a></li>
-                        <li><a href="index.html">tech</a></li><!--blog link -->
+                        <li><a href="index.html">tech</a></li><!--tech link -->
                     </ol>
-                </div>
+                </div><!--close col-->
             </div><!--close row-->
-        </div>
-    </div><!--close breadcrumbBackground-->
+        </div><!--close breadcrumbContainer-->
+    </div><!--close row-->
+</div><!--close menuMain-->
+
+
+<!--close header-->
 
 <!--close header-->
 
@@ -322,7 +333,7 @@ Assignment: W12.0 FEWD, Digital SKills Academy
         <div class="col-md-17 noPaddingLeft noPaddingRight">
             <div class="navbar navbar-default">
                 <ul class="nav navbar-nav">
-                    <li><a href="#"><span class="glyphicon glyphicon-home"><span></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
                     <li><a href="#">UK</a></li>
                     <li><a href="#">world</a></li>
                     <li><a href="#">sport</a></li>
@@ -355,8 +366,11 @@ Assignment: W12.0 FEWD, Digital SKills Academy
 
 </div>
 <!--speed up page display by putting javascript at the bottom of the page -->
-<script src="jquery-1.11.3.js"></script><!-- jquery -->
-<script src="js\bootstrap.js"></script><!-- bootstrap.js -->
+<script src="js/jquery.min.js"></script><!-- jquery -->
+<script src="js/jquery-ui.min.js"></script><!-- jquery-ui -->
+<script src="js/lightbox.min.js"></script><!-- lightbox -->
+<script src="js/bootstrap.js"></script><!-- bootstrap.js -->
+<script src="js/guardian.js"></script>
 
 </body><!--close body  -->
 </html><!-- close html -->
